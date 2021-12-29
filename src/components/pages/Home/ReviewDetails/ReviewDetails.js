@@ -13,7 +13,7 @@ const ReviewDetails = () => {
 
     useEffect(() => {
         const getReview = async () => {
-            await axios.get(`http://localhost:5000/review-details/${id}`)
+            await axios.get(`https://custard-cake-backend-api.herokuapp.com/review-details/${id}`)
                 .then(res => {
                     setSingleReview(res.data);
                 });

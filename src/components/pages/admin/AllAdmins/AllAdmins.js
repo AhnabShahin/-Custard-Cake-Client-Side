@@ -6,7 +6,7 @@ const AllAdmins = () => {
     useEffect(()=>{
         const getAdmins = async () => {
             const role ={'role':'admin'}
-            await axios.post("http://localhost:5000/users",role)
+            await axios.post("https://custard-cake-backend-api.herokuapp.com/users",role)
                 .then(res => {
                     setAdmins(res.data);
                 });

@@ -12,7 +12,7 @@ const Reviews = () => {
     const history = useHistory();
     useEffect(() => {
         const getReviews = async () => {
-            await axios.get("http://localhost:5000/reviews", {
+            await axios.get("https://custard-cake-backend-api.herokuapp.com/reviews", {
                 params: { limit: 6 }
             })
                 .then(res => {

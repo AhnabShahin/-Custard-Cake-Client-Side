@@ -16,7 +16,7 @@ const AddReview = () => {
         data['reviewBy'] = user.displayName;
         console.log(data)
         async function postPackageData(data) {
-            await axios.post('http://localhost:5000/add-review', data).then(res => {
+            await axios.post('https://custard-cake-backend-api.herokuapp.com/add-review', data).then(res => {
                 setMassage(res.data);
             });
         }

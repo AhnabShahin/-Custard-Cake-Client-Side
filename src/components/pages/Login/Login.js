@@ -27,7 +27,7 @@ const Login = () => {
                     role:'user'
                 }
                 async function postUserData(data) {
-                await axios.post('http://localhost:5000/registration', data).then(history.push(redirect_URL))
+                await axios.post('https://custard-cake-backend-api.herokuapp.com/registration', data).then(history.push(redirect_URL))
                 }
                 postUserData(data);
             })
@@ -35,7 +35,7 @@ const Login = () => {
 
     const onSubmit = data => {
         async function postUserData(data) {
-            await axios.post('http://localhost:5000/login', data).then(res => {
+            await axios.post('https://custard-cake-backend-api.herokuapp.com/login', data).then(res => {
                 if (res.data.displayName) {
                     signInWithEmailAndPassword(auth, data.email, data.password)
                         .then((userCredential) => {

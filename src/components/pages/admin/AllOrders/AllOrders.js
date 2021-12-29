@@ -8,7 +8,7 @@ const AllOrders = (props) => {
     // const [selectedItem, setSelectedItem] = useState({});
     // useEffect(() => {
     //     const getOrders = async () => {
-    //         await axios.get("http://localhost:5000/orders")
+    //         await axios.get("https://custard-cake-backend-api.herokuapp.com/orders")
     //             .then(res => {
     //                 setOrders(res.data);
     //             });
@@ -21,7 +21,7 @@ const AllOrders = (props) => {
 
     useEffect(() => {
         const getOrders = async () => {
-            await axios.get("http://localhost:5000/orders")
+            await axios.get("https://custard-cake-backend-api.herokuapp.com/orders")
                 .then(res => {
                     setOrders(res.data);
                 });
@@ -33,7 +33,7 @@ const AllOrders = (props) => {
     }
     const handleDeleteOrder = (orderId) => {
         async function deleteOrder() {
-            await axios.delete(`http://localhost:5000/delete-order/${orderId}`).then(res => {
+            await axios.delete(`https://custard-cake-backend-api.herokuapp.com/delete-order/${orderId}`).then(res => {
                 setMassage(res.data);
             });
         }
@@ -47,7 +47,7 @@ const AllOrders = (props) => {
     }
     const handleStatusChange = (orderId) => {
         async function updateStatus() {
-            await axios.put(`http://localhost:5000/update-order-status/${orderId}/${value}`).then(res => {
+            await axios.put(`https://custard-cake-backend-api.herokuapp.com/update-order-status/${orderId}/${value}`).then(res => {
                 setMassage(res.data);
             });
         }

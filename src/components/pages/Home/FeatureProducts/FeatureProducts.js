@@ -9,7 +9,7 @@ const FeatureProducts = () => {
     const history = useHistory();
     useEffect(() => {
         const getItems = async () => {
-            await axios.get("http://localhost:5000/items",{
+            await axios.get("https://custard-cake-backend-api.herokuapp.com/items",{
                 params: { limit: 6 }
               })
               .then(res => {

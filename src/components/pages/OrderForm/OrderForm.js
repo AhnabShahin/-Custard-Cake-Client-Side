@@ -19,7 +19,7 @@ const OrderForm = () => {
         data['status'] = 'pending';
 
         async function postOrder(data) {
-            await axios.post('http://localhost:5000/add-order', data).then(res => {
+            await axios.post('https://custard-cake-backend-api.herokuapp.com/add-order', data).then(res => {
                 setMassage(res.data);
             });
         }

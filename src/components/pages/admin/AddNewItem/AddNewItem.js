@@ -15,7 +15,7 @@ const AddNewItem = () => {
         data['addedBy'] = user.email;
         console.log(data)
         async function postPackageData(data) {
-            await axios.post('http://localhost:5000/add-item', data).then(res => {
+            await axios.post('https://custard-cake-backend-api.herokuapp.com/add-item', data).then(res => {
                 setMassage(res.data);
             });
         }

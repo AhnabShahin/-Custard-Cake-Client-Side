@@ -1,11 +1,11 @@
-# Assault Rifels application
+# Cake selling application
 ### Hosted On     
 <img src="https://img.shields.io/badge/firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black" alt="firebase"/>
 Live Website Link 
 
 ```javascript
 
-https://assault-rifles.web.app/
+https://custard-cake.web.app/
  
 ```
 
@@ -13,7 +13,7 @@ Live API Link
 
 ```javascript
 
-http://localhost:5000/
+https://custard-cake-backend-api.herokuapp.com/
  
 ```
  
@@ -21,7 +21,7 @@ Back End application
 
 ```javascript
 
-https://github.com/AhnabShahin/Assault-Rifles-server-side
+https://github.com/AhnabShahin/custard-cake-server-side
  
 ```
  

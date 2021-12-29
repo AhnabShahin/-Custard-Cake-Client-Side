@@ -6,7 +6,7 @@ const AllUsers = () => {
     useEffect(()=>{
         const getUsers = async () => {
             const role ={'role':'user'}
-            await axios.post("http://localhost:5000/users",role)
+            await axios.post("https://custard-cake-backend-api.herokuapp.com/users",role)
                 .then(res => {
                     setAusers(res.data);
                     console.log(res.data)

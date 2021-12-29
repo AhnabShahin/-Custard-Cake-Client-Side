@@ -33,7 +33,7 @@ const Main = () => {
     if (user.email) {
         setIsloading(true)
         async function getUserDetails(email) {
-            await axios.post('http://localhost:5000/user-details', email).then(res => {
+            await axios.post('https://custard-cake-backend-api.herokuapp.com/user-details', email).then(res => {
                 if (res.data.role === 'admin') {
                     setIsAdmin(true);
                 } else {

@@ -11,7 +11,7 @@ const ItemDetails = () => {
 
     useEffect(() => {
         const getItem = async () => {
-            await axios.get(`http://localhost:5000/item-details/${id}`)
+            await axios.get(`https://custard-cake-backend-api.herokuapp.com/item-details/${id}`)
                 .then(res => {
                     setSingleItem(res.data);
                 });

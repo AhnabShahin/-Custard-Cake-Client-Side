@@ -9,7 +9,7 @@ const Items = () => {
     const history = useHistory();
     useEffect(() => {
         const getItems = async () => {
-            await axios.get("http://localhost:5000/items")
+            await axios.get("https://custard-cake-backend-api.herokuapp.com/items")
                 .then(res => {
                     console.log(res.data)
                     setItems(res.data);

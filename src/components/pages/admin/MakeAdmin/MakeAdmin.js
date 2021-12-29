@@ -12,7 +12,7 @@ const MakeAdmin = () => {
         console.log(data)
 
             async function getUserDetails(email) {
-                await axios.post('http://localhost:5000/make-admin', email).then(res => {
+                await axios.post('https://custard-cake-backend-api.herokuapp.com/make-admin', email).then(res => {
                     setMassge(res.data)
                 });
             }
